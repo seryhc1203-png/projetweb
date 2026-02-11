@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="description algorithme Perceptron">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="images/ia.jpg">
+        <title>Perceptron</title>
+    </head>
+    <body id="top">
+        <header>
+            <a href="index.html" title="Retour à l'accueil"><img src="images/logo-cyu.png" alt="logo de CY Université" width="200"></a>
+            <h1>Algorithme Perceptron</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="environnement.html">Environnement</a></li>
+                    <li><a href="minmax.html">MinMax</a></li>
+                    <li><a href="astar.html">A-Star</a></li>
+                    <li><a href="perceptron.html">Perceptron</a></li>
+                    <li><a href="equipe.html">Équipe</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+        		<nav class="ariane" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a>&rsaquo;Perceptron</nav>
+        		<aside> 
+        			<nav class="second-menu">
+  						<ul>
+        					<li><a href="#principeGeneral">Principe</a></li>
+       					<li><a href="#jeuEtObjectifs">Objectifs</a></li>
+        					<li><a href="#donneesManipulees">Données</a></li>
+        					<li><a href="#resultatAttendu">Résultat</a></li>
+   	 				</ul>
+					</nav>
+      		</aside>
+        		<p>
+                Le Perceptron est un algorithme d’apprentissage supervisé utilisé pour la classification de données.
+                Il ajuste progressivement des poids associés aux entrées afin de minimiser l’erreur de classification.
+            </p>
+            <section id="principeGeneral">
+                <h2>Principe général</h2>
+                <p>
+                    Dans notre projet, il permet à un robot jardinier d’apprendre à distinguer les bonnes roses
+                    des mauvaises roses à partir d’exemples fournis par un jardinier humain.
+                    Le modèle apprend automatiquement une règle de décision à partir de données observées,
+                    puis l’applique pour prendre des décisions sur de nouvelles roses.
+                </p>
+                <p>Chaque fleur est représenté par deux caractéristiques numériques, par exemple :</p>
+                <ul>
+                    <li>Taille</li>
+                    <li>Intensité de la couleur rouge</li>
+                </ul>
+                <p>Chaque fleur appartient à une classe :</p>
+                <ul>
+                    <li>À conserver pour le bouquet</li>
+                    <li>À rejeter</li>
+                </ul>
+                <p>
+                    Le Perceptron apprend une frontière linéaire permettant de séparer les fleurs à conserver de celles à rejeter.
+                    L’évolution des poids, du biais et de l’erreur de classification est affichée dans la console à chaque itération.
+                </p>
+            </section>
+            <section id="jeuEtObjectif">
+                <h2>Jeu et objectifs</h2>
+                <p>
+                    L’utilisateur sélectionne d’abord une rose modèle en cliquant dessus.
+                    Il valide ou corrige ensuite les choix du robot afin de l’entraîner.
+                </p>
+            </section>
+            <section id="donneesManipulees">
+                <h2>Données utilisées par le perceptron</h2>
+                <table class="perceptron-table">
+                    <caption>Exemple de roses (caractéristiques + décision)</caption>
+                    <thead>
+                        <tr>
+                            <th>Rose</th>
+                            <th>Taille (cm)</th>
+                            <th>Intensité du rouge (0–10)</th>
+                            <th>Score (w·x + b)</th>
+                            <th>Décision</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>R1</td>
+                            <td>12.5</td>
+                            <td>8.2</td>
+                            <td>+2.4</td>
+                            <td>Sélectionnée</td>
+                        </tr>
+                        <tr>
+                            <td>R2</td>
+                            <td>9.0</td>
+                            <td>3.1</td>
+                            <td>-1.2</td>
+                            <td>Non sélectionnée</td>
+                        </tr>
+                        <tr>
+                            <td>R3</td>
+                            <td>14.2</td>
+                            <td>7.4</td>
+                            <td>+3.1</td>
+                            <td>Sélectionnée</td>
+                        </tr>
+                        <tr>
+                            <td>R4</td>
+                            <td>10.1</td>
+                            <td>5.0</td>
+                            <td>+0.5</td>
+                            <td>Sélectionnée</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <strong>Interprétation :</strong>
+                    si le score est positif, la rose est sélectionnée,
+                    sinon elle est rejetée.
+                </p>
+                <p>
+                    Pour en savoir plus sur le Perceptron :
+                    <a href="https://fr.wikipedia.org/wiki/Perceptron" target="_blank" rel="noopener">Article Wikipédia</a>.
+                </p>
+            </section>
+            <section id="resultatAttendu">
+                <h2>Résultat attendu</h2>
+                <p>
+                    Après entraînement, le perceptron fournit une règle de décision permettant de classifier automatiquement une nouvelle rose.
+                </p>
+            </section>
+        </main>
+        <footer>
+            <span>HAMICI-ADOUNSIBA-DIABY</span>
+            <span>L2-I</span>
+            <span>2026</span>
+            <p><a href="#top">Cliquez ici pour retourner en haut de la page</a></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="description des environnemnts">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/png" href="images/ia.jpg">
+		<title>Environnement</title>
+	</head>
+	<body id="top">
+		<header>
+			<a href="index.html" title="Retour à l'accueil"><img src="images/logo-cyu.png" alt="logo de CY Université" width="200"></a>
+			<h1>Environnement d'Algorithmes</h1>
+			<nav>
+				<ul class="menu">
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="environnement.html">Environnement</a></li>
+					<li><a href="minmax.html">MinMax</a></li>
+					<li><a href="astar.html">A-Star</a></li>
+					<li><a href="perceptron.html">Perceptron</a></li>
+					<li><a href="equipe.html">Équipe</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<nav class="ariane" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a>&rsaquo;Environnement</nav>
+			<aside>
+				<nav class="second-menu">
+  					<ul>
+        				<li><a href="#environnementsDuProjet">Introduction</a></li>
+       				<li><a href="#astar">A*</a></li>
+        				<li><a href="#minmax">MinMax</a></li>
+        				<li><a href="#perceptron">Perceptron</a></li>
+   	 			</ul>
+				</nav>
+			</aside>
+			<p>
+				Dans ce projet, nous allons explorer différents environnements d'algorithmes utilisés dans le domaine de l'intelligence artificielle.
+				Ces environnements sont essentiels pour tester et évaluer les performances des algorithmes dans des situations réelles ou simulées.
+				Nous allons notamment nous pencher sur les environnements de jeux, de labyrinthes, et d'apprentissage automatique.
+			</p>
+			<section id="environnementsDuProjet">
+				<h2>Environnements du projet</h2>
+				<p>
+					Dans notre application, chaque algorithme d'Intelligence artificielle s'exécute dans un environnement spécifique.
+					Un environnement correspond à un ensemble de données décrivant l'état du problème (grille, plateau, parterre…).
+					Les algorithmes utilisent ensuite ces données pour calculer une solution, sans que la logique de calcul
+					soit incluse dans les classes de données.
+					Cette séparation permet de maintenir une architecture orientée objet claire et modulaire.
+				</p>
+			</section>
+			<section id="astar">
+				<h2>Environnement A* : le labyrinthe</h2>
+				<p>
+					L'environnement de A* est un labyrinthe représenté par une grille de cellules.
+					Chaque cellule possède une position (x, y) et un état indiquant si elle est un obstacle ou non.
+					Deux cellules particulières sont définies :
+					la cellule de départ et la cellule d'arrivée.
+				</p>
+				<ul>
+					<li><strong>Labyrinthe</strong> : contient la grille, le départ et l'arrivée.</li>
+					<li><strong>Cellule</strong> : décrit une case de la grille (coordonnées + obstacle).</li>
+				</ul>
+			</section>
+			<section id="minmax">
+				<h2>Environnement MinMax : le plateau de jeu</h2>
+				<p>
+					L'environnement de MinMax est un plateau de jeu 4*4 composé de cases.
+					Les joueurs placent des nombres dans les cases, et l'objectif est d'obtenir un alignement respectant la règle du jeu (ex. somme paire).
+					Le modèle de données stocke le plateau, les deux joueurs, et la liste des nombres disponibles.
+				</p>
+				<ul>
+					<li><strong>JeuMinMax</strong> : représente une partie (joueurs, plateau, nombres disponibles).</li>
+					<li><strong>Plateau</strong> : contient une grille de cases (4*4).</li>
+					<li><strong>Case</strong> : peut contenir 0 ou 1 nombre.</li>
+					<li><strong>Nombre</strong> : valeur entière manipulée par le jeu.</li>
+					<li><strong>Joueur</strong> : identifiant + nom.</li>
+				</ul>
+			</section>
+			<section id="perceptron">
+				<h2>Environnement Perceptron : le parterre de roses</h2>
+				<p>
+					L'environnement du perceptron est un parterre contenant des roses.
+					Chaque rose est décrite par des caractéristiques (ex. taille, intensité du rouge) et une position pour l'affichage.
+					Le système sélectionne certaines roses pour constituer un bouquet.
+				</p>
+				<ul>
+					<li><strong>ParterreRose</strong> : contient une liste de roses.</li>
+					<li><strong>Rose</strong> : caractéristiques (taille, rouge) + position.</li>
+					<li><strong>Bouquet</strong> : liste de roses sélectionnées + capacité maximale.</li>
+					<li><strong>Perceptron</strong> : paramètres du modèle (poids, biais) stockés comme données.</li>
+				</ul>
+			</section>
+			<section id="comparaisonEnvironnements">
+				<h2>Comparaison des environnements</h2>
+				<table>
+					<caption>Environnements et données principales</caption>
+					<thead>
+						<tr>
+							<th>Algorithme</th>
+							<th>Environnement</th>
+							<th>Données principales</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>A*</td>
+							<td>Labyrinthe</td>
+							<td>Cellules, obstacles, départ, arrivée</td>
+						</tr>
+						<tr>
+							<td>MinMax</td>
+							<td>Plateau 4*4</td>
+							<td>Cases, nombres, joueurs, nombres disponibles</td>
+						</tr>
+						<tr>
+							<td>Perceptron</td>
+							<td>Parterre de roses</td>
+							<td>Roses (taille, rouge), bouquet, paramètres du modèle</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</main>
+		<footer>
+			<span>HAMICI-ADOUNSIBA-DIABY</span>
+			<span>L2-I</span>
+			<span>2026</span>
+			<p><a href="#top">Cliquez ici pour retourner en haut de la page</a></p>
+		</footer>
+	</body>
+</html>

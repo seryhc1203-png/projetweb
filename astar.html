@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="description algorithme A-Star">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="images/ia.jpg">
+        <title>A*</title>
+    </head>
+    <body id="top">
+        <header>
+            <a href="index.html" title="Retour à l'accueil"><img src="images/logo-cyu.png" alt="logo de CY Université" width="200"></a>
+            <h1>Algorithme A* (A-Star)</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="environnement.html">Environnement</a></li>
+                    <li><a href="minmax.html">MinMax</a></li>
+                    <li><a href="astar.html">A-Star</a></li>
+                    <li><a href="perceptron.html">Perceptron</a></li>
+                    <li><a href="equipe.html">Équipe</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+        		<nav class="ariane" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a>&rsaquo;A-Star</nav>
+        		<aside>
+        			<nav class="second-menu">
+  						<ul>
+        					<li><a href="#principeGeneral">Principe</a></li>
+        					<li><a href="#donneesManipulees">Données</a></li>
+        					<li><a href="#resultatAttendu">Résultat</a></li>
+   	 				</ul>
+					</nav>
+        		</aside>
+        		<p>
+                L'algorithme A* est un algorithme de recherche de chemin permettant
+                de déterminer un chemin optimal entre un point de départ et un point
+                d'arrivée dans un environnement structuré. Il repose sur la combinaison
+                d'un coût réel associé au chemin parcouru et d'une estimation heuristique
+                du coût restant jusqu'à l'objectif.
+            </p>
+         	<section id="principeGeneral">
+                <h2>Principe général</h2>
+                <p>
+                    Dans ce projet, l'algorithme A* est appliqué à un labyrinthe logique
+                    bidimensionnel (2D), représenté sous forme de grille. L'utilisateur crée
+                    ou charge un labyrinthe puis choisit une case de départ et une case
+                    d'arrivée en cliquant sur la grille. Il peut ajouter ou supprimer des obstacles.
+                </p>
+                <p>Chaque case de la grille peut correspondre à :</p>
+                <ul>
+                    <li>Une case libre</li>
+                    <li>Un obstacle</li>
+                    <li>Une position de départ</li>
+                    <li>Une position d'arrivée</li>
+                </ul>
+                <p>
+                    L'algorithme explore progressivement les cases accessibles afin de
+                    déterminer le chemin optimal. Les différentes étapes de l'exécution
+                    (nœuds explorés, coûts calculés, chemin final) seront affichées.
+                </p>
+            </section>
+            <section id="donneesManipulees">
+                <h2>Données manipulées</h2>
+                <ul>
+                    <li><strong>Labyrinthe</strong> : contient la grille, le départ et l'arrivée.</li>
+                    <li><strong>Cellule</strong> : décrit une case de la grille (coordonnées + obstacle).</li>
+                </ul>
+            </section>
+            <section id="resultatAttendu">
+                <h2>Résultat attendu</h2>
+                <p>
+                    Après lancement de l’algorithme, l’interface affiche progressivement
+                    les cases explorées puis le chemin optimal trouvé.
+                </p>
+            </section>
+            <figure>
+                <img src="images/lab.jpg" alt="exemple de labyrinthe" class="center-img">
+                <figcaption>Exemple de labyrinthe 2D</figcaption>
+            </figure>
+        </main>
+        <footer>
+            <span>HAMICI-ADOUNSIBA-DIABY</span>
+            <span>L2-I</span>
+            <span>2026</span>
+            <p><a href="#top">Cliquez ici pour retourner en haut de la page</a></p>
+        </footer>
+    </body>
+</html>

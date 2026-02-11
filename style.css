@@ -1,0 +1,202 @@
+h1{
+	font-size: 2em;
+	color: rgb(5, 80, 5);
+	text-decoration: underline;
+	text-align: center;
+}
+
+ul{
+	font-size: 18px;
+	color: darkblue;
+}
+
+h2{
+	font-size: 1.5em; 
+	text-indent: 10px;
+	text-decoration: underline;
+	color: rgb(17, 17, 67);
+}
+
+p{
+	font-size: 18px;
+	color: darkblue;
+}
+
+h3{
+	font-size: 1.3em;
+	text-indent: 20px;
+	color: rgb(89, 148, 150);
+	text-decoration: underline;
+}
+h4{
+	font-size: 1.1em;
+	text-indent: 30px;
+	color: rgb(135, 129, 156);
+	text-decoration: underline;
+}
+
+table{
+	border-collapse: collapse; 
+	width: 50%;
+	text-align: center;
+	margin-left: auto; 
+	margin-right: auto;
+
+}
+
+th, td{
+	border: 2px solid black; 
+	padding: 8px;  
+}
+
+th{
+	background-color: lightgrey; 
+}
+
+nav{
+	background-color: lightyellow;
+	padding: 10px;
+}
+
+.center-img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu{
+	list-style: none;
+	padding: 0;
+	margin: 10px 0 0 0;
+}
+
+.menu li{
+	display: inline;
+	margin: 0 15px;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.content-container{
+	display: flex;            
+	gap: 20px;                
+	align-items: flex-start;   
+	flex-wrap: wrap;          
+}
+
+.main-text{
+	flex: 1;                   
+	min-width: 60%;           
+}
+
+aside{
+	flex: 0 0 30%;             
+	background-color: lightgray;
+	padding: 10px;
+	border-radius: 5px;
+	box-sizing: border-box;    
+}
+
+strong{
+	color: darkblue;
+}
+    
+em{
+	color: black;
+}
+    
+ol{
+	font-size: 18px;
+	color: darkblue;
+} 
+
+figcaption{
+	font-size: 14px;
+	color: darkolivegreen;
+	text-align: center;
+	margin-bottom: 5px;
+	text-decoration: underline;
+}
+
+footer{
+	text-align: center;
+	font-size: 14px;
+	color: gray;
+	margin-top: 20px;
+	padding: 10px;
+	background-color: lightyellow;
+}
+
+body{
+	font-family: Arial, sans-serif;
+	margin: 5px;
+	padding: 5px;
+	background-color: whitesmoke;
+}
+
+header{
+	background-color: lightyellow;
+	padding: 10px;
+	text-align: center;
+}
+
+.perceptron-table{
+	border-collapse: collapse;
+	width: 100%;
+	margin: 1rem 0;
+}
+
+.perceptron-table caption{
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+
+.perceptron-table th,
+.perceptron-table td{
+	border: 1px solid #ccc;
+	padding: 10px;
+	text-align: center;
+}
+
+.perceptron-table thead{
+	background: #f2f2f2;
+}
+
+.second-menu{
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	width: 200px;
+	background-color: white;
+	border: 3px solid #ccc;
+	z-index: 9999;
+	text-align: center;
+}
+
+.second-menu ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.second-menu li{
+	margin: 8px 0;
+}
+
+.second-menu a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="description algorithme MinMax">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image/png" href="images/ia.jpg">
+		<title>MinMax</title>
+	</head>
+	<body id="top">
+		<header>
+			<a href="index.html" title="Retour à l'accueil"><img src="images/logo-cyu.png" alt="logo de CY Université" width="200"></a>
+			<h1>Algorithme MinMax</h1>
+			<nav>
+				<ul class="menu">
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="environnement.html">Environnement</a></li>
+					<li><a href="minmax.html">MinMax</a></li>
+					<li><a href="astar.html">A-Star</a></li>
+					<li><a href="perceptron.html">Perceptron</a></li>
+					<li><a href="equipe.html">Équipe</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<nav class="ariane" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a>&rsaquo;MinMax</nav>
+			<aside>
+				<nav class="second-menu">
+  					<ul>
+        				<li><a href="#principeGeneral">Principe</a></li>
+       				<li><a href="#jeuEtObjectifs">Objectifs</a></li>
+        				<li><a href="#donneesManipulees">Données</a></li>
+        				<li><a href="#etapesGenerales">Étapes</a></li>
+        				<li><a href="#resultatAttendu">Résultat</a></li>
+   	 			</ul>
+				</nav>
+			</aside>
+			<p>
+				L'algorithme MinMax est une technique utilisée dans les jeux à deux joueurs pour déterminer le meilleur coup à jouer.
+				Il fonctionne en évaluant les différentes possibilités de jeu et en choisissant le coup qui maximise les chances de gagner
+				pour le joueur tout en minimisant les chances de gagner pour l'adversaire.
+			</p>
+			<section id="principeGeneral">
+				<h2>Principe général</h2>
+				<p>
+					MinMax est un algorithme de décision utilisé dans les jeux à deux joueurs.
+					Il explore les coups possibles sous forme d'arbre : le joueur courant cherche à maximiser ses chances de gagner,
+					tandis que l'adversaire est supposé jouer de manière optimale pour minimiser ce résultat.
+					L'algorithme permet ainsi de choisir un coup considéré comme le meilleur dans une situation donnée.
+				</p>
+			</section>
+			<section id="jeuEtObjectifs">
+				<h2>Jeu et objectifs</h2>
+				<p>
+					Dans notre projet, MinMax s'applique à un plateau 4*4.
+					Les joueurs placent des nombres dans les cases du plateau.
+					L'objectif est d'obtenir un alignement respectant la règle définie
+					(par exemple : aligner 4 nombres dont la somme est paire).
+				</p>
+			</section>
+			<section id="donneesManipulees">
+				<h2>Données manipulées (modèle de données)</h2>
+				<ul>
+					<li><strong>JeuMinMax</strong> : stocke les deux joueurs, le plateau et les nombres disponibles.</li>
+					<li><strong>Plateau</strong> : grille 4*4 de cases.</li>
+					<li><strong>Case</strong> : contient éventuellement un nombre (0..1).</li>
+					<li><strong>Nombre</strong> : valeur entière placée dans une case.</li>
+					<li><strong>Joueur</strong> : informations sur un joueur (id, nom).</li>
+				</ul>
+			</section>
+			<section id="etapesGenerales">
+				<h2>Étapes générales</h2>
+				<ol>
+					<li>Générer tous les coups possibles à partir de l'état actuel.</li>
+					<li>Simuler récursivement les tours adverses et joueurs.</li>
+					<li>Évaluer les états finaux avec une fonction de score.</li>
+					<li>Choisir le coup maximisant le score du joueur.</li>
+				</ol>
+			</section>
+			<section id="resultatAttendu">
+				<h2>Résultat attendu</h2>
+				<p>
+					À partir d'un état du plateau et des nombres restants, MinMax doit proposer un coup :
+					choix d'une case et d'un nombre.
+					Dans l'application, l'IHM permettra de visualiser le plateau et les choix effectués,
+					éventuellement avec une animation des étapes de recherche.
+				</p>
+				<figure>
+					<img src="images/minmax.png" alt="exemple de plateau de jeu 4*4" width=300 class="center-img">
+					<figcaption>Exemple de plateau de jeu 4*4</figcaption>
+				</figure>
+			</section>
+		</main>
+		<footer>
+			<span>HAMICI-ADOUNSIBA-DIABY</span>
+			<span>L2-I</span>
+			<span>2026</span>
+			<p><a href="#top">Cliquez ici pour retourner en haut de la page</a></p>
+		</footer>
+	</body>
+</html>
